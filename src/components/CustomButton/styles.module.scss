@@ -1,0 +1,46 @@
+.container {
+    --width: 12px;
+    --height: 12px;
+}
+
+.container ion-button {
+    --border-radius: 4px;
+    --padding-start: 5px;
+    --padding-end: 5px;
+    --padding-top: 5px;
+    --padding-bottom: 5px;
+}
+
+.container ion-icon {
+    --ionicon-stroke-width: 10px;
+    width: 24px;
+    height: 24px;
+    line-height: 12px;
+}
+
+.containerCircle ion-button {
+    --border-radius: 50px;
+}
+
+.container4px ion-button {
+    --border-radius: 4px;
+}
+
+.container8px ion-button {
+    --border-radius: 8px;
+}
+
+.container12px ion-button {
+    --border-radius: 12px;
+}
+
+.container16px ion-button {
+    --border-radius: 16px;
+}
+
+.containerCircle ion-button {
+    --padding-start: 11.2px;
+    --padding-end: 11.2px;
+    --padding-top: 11.2px;
+    --padding-bottom: 11.2px;
+}

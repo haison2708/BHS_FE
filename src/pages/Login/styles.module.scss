@@ -1,0 +1,43 @@
+.inputLogin {
+  width: 100%;
+  height: 100%;
+}
+
+.inputImage {
+  width: 48px;
+  height: 48px;
+  padding: 15px 1px 13px 15px;
+  object-fit: cover;
+}
+
+.containerInput {
+  cursor: pointer;
+}
+
+.customModal::part(content) {
+  --max-width: 348px;
+  --height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 32%);
+  --background: linear-gradient(
+    109deg,
+    rgba(25, 43, 101, 1) 0%,
+    rgba(65, 86, 157, 1) 100%
+  );
+}
+
+.modalFinger::part(content) {
+  --max-height: 202px;
+  --max-width: 348px;
+  --background: white;
+  border-radius: 12px;
+}
+
+.buttonClearPhone {
+  --ripple-color: transparent;
+}
+
+.modalFinger::part(header) {
+  background-color: red;
+  --background: red;
+}

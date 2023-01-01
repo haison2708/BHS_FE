@@ -1,0 +1,148 @@
+.page {
+    background: var(--white-gray);
+}
+
+.toolbar {
+    --padding-start: 0px !important;
+    --padding-end: 0px !important;
+}
+
+.toolbar__content {
+    width: 100%;
+    padding: 61px 16px 0 16px;
+}
+
+.searchBar {
+    --background: white;
+    --placeholder-color: var(--gray);
+    --icon-color: var(--gray);
+    height: 35px;
+}
+
+.searchBar input {
+    font-size: 16px !important;
+    padding-left: 36px !important;
+}
+
+.mainVendor {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    padding: 0 16px;
+    top: 117px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+
+    &--expand {
+    }
+
+    &--shrink {
+        transform: translate(-50%, 20px);
+        // transform: translate(-50%, -10px);
+    }
+}
+
+/* /////////////////// Content */
+
+.pageContent {
+    background-color: var(--white-gray);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 88px;
+    /* padding-inline: 16px; */
+    align-items: center;
+}
+
+.swiper {
+    height: 132px;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+.swiper ion-img {
+    object-fit: cover;
+}
+
+.swiper__pagination--active {
+    background-color: white !important;
+    opacity: 1 !important;
+}
+
+.gameCard {
+    margin-top: 20px;
+    color: black;
+}
+
+.horizontalList {
+    display: flex;
+    padding: 14px 0 !important;
+    margin: -14px 0;
+    gap: 12px;
+    overflow-x: scroll !important;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .item {
+        width: fit-content;
+        height: auto;
+    }
+}
+
+.categoryGrid {
+    ion-col {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.productsGrid {
+    margin-bottom: 24px;
+
+    ion-col {
+        display: flex;
+        justify-content: center;
+
+        &.start {
+            justify-content: flex-start;
+        }
+        &.end {
+            justify-content: flex-end;
+        }
+    }
+
+    ion-button {
+        font-size: 14px;
+        font-weight: 300;
+        width: 90%;
+        height: 33px;
+    }
+}
+
+.loading {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ion-spinner {
+    }
+}
+
+.noItemBlock {
+    width: 100vw;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.refresher {
+    z-index: 9999;
+    margin-top: 80px;
+}

@@ -1,0 +1,82 @@
+.container {
+    border-radius: 12px;
+    border: 1px solid #A4A4A8;
+    height: 48px;
+    box-sizing: border-box;
+}
+.container:focus-within {
+    border: 1px solid #3D3C4E;
+}
+#IonItem:focus-within .icon {
+    color: #3D3C4E;
+}
+
+.datetime {
+    width: 348px;
+    --background: white
+}
+
+.modalBirthday {
+    --background: transparent;
+    --width: auto;
+    --height: auto;
+}
+.datetime__header {
+    height: 51px;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(25, 43, 101, 1) 0%, rgba(65, 86, 157, 1) 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1000;
+    padding: 9px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marginBlock {
+    height: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+.datetime__refreshButton {
+    height: 25px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --padding-top: 4px;
+    --padding-bottom: 4px;	
+    font-size: 14px;
+    font-weight: 300;
+    color: white
+}
+
+.datetime__footer {
+    background-color: white;
+    height: 75px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.datetime__footerButtons {
+    width: 142px;
+    height: 43px
+}
+
+.datetime__refreshButton {
+    height: 25px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --padding-top: 4px;
+    --padding-bottom: 4px;	
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.icon {
+    font-size: 20px;
+    color: #A4A4A8;
+}

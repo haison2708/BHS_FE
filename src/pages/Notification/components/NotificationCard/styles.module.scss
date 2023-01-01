@@ -1,0 +1,90 @@
+ion-card {
+    width: 100%;
+
+    .content {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    
+        &__left {
+            padding: 12px;
+    
+    
+            .iconWrapper {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+
+                .icon {
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+        }
+    
+        &__center {
+            padding: 12px 0;
+            flex-direction: column;
+            flex: 1;
+    
+            .title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+    
+            .timeLine {
+                margin-top: 4px;
+                font-size: 13px;
+                color: #A4A4A8;
+                font-weight: 300;
+    
+            }
+    
+            .description {
+                margin-top: 16px;
+                font-size: 15px;
+                color: #6D6D7A;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* number of lines to show */
+                        line-clamp: 2; 
+                -webkit-box-orient: vertical;
+    
+            }
+    
+        }
+    
+        &__right {
+            padding: 12px;
+            width: 42px;
+            justify-content: center;
+            align-items: center;
+
+            .dot {
+                position: relative;
+                width: 16px;
+                height: 16px;
+                background-color: #D9233240;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 4px;
+                    right: 4px;
+                    bottom: 4px;
+                    left: 4px;
+                    background-color: #D92332;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

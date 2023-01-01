@@ -1,0 +1,128 @@
+.header {
+  height: 248px;
+  --padding-top: 50px;
+  --padding-end: 20px;
+  --padding-start: 20px;
+  color: white;
+  --background: #364a8e url('../../asset/system/background_header.png') no-repeat 100% center/cover;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-sizing: content-box;
+}
+
+.divider {
+  border-top: 1px solid;
+  border-color: var(--gray-w);
+  margin: 0 10px;
+  width: '100%';
+}
+
+ion-item {
+  height: 51px;
+}
+
+.card {
+  position: relative;
+  width: 100vw;
+  z-index: 100;
+  top: -60px;
+  overflow: visible;
+  /* like design */
+}
+
+.card__content {
+  padding-top: 70px;
+}
+
+ion-item ion-note {
+  color: black;
+  font-size: 26x;
+}
+
+.avatarContainer {
+  --avatar-height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  align-self: center;
+  z-index: 1000;
+  top: calc(var(--avatar-height) / -2);
+  left: 50%;
+  transform: translate(-50%);
+  overflow: visible;
+
+  ion-avatar {
+    width: var(--avatar-height);
+    height: var(--avatar-height);
+    border: 6px solid white;
+    background-color: gray;
+  }
+}
+.avatarContainer:after {
+  content: '';
+  background: var(--primary);
+  display: block;
+  position: absolute;
+  padding-top: 100%;
+  padding-left: 100%;
+  opacity: 0;
+  transition: all 0.1s;
+  border-radius: 1000px;
+}
+
+.avatarContainer:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.cameraIconContainer {
+  background-color: var(--primary);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 2px solid white;
+  box-sizing: content-box;
+}
+
+.cameraIconContainer ion-icon {
+  font-size: 14px;
+  color: white;
+}
+
+.item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.label {
+  text-overflow: unset !important;
+  white-space: unset !important;
+  overflow: unset !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: gray !important;
+  margin-right: 20px !important;
+  min-width: fit-content !important;
+}
+
+.text {
+  max-width: max-content;
+  overflow: hidden;
+  white-space: pre-line;
+  font-size: 15px;
+  font-weight: 400;
+  justify-self: end;
+}

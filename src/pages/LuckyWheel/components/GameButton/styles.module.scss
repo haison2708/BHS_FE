@@ -1,0 +1,28 @@
+.buttonContainer {
+  position: relative;
+  height: 51px;
+  width: 100%;
+  border-radius: 20px;
+  transition: all 0.5s;
+
+  &:active {
+    opacity: 0.8;
+    transform: translateY(2px);
+  }
+
+  .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-6px);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

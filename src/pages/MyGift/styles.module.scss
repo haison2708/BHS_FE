@@ -1,0 +1,25 @@
+.buttonView {
+    --border-radius: 8pt;
+    --background: transparent;
+    --border-width: 1px;
+    --border-style: solid;
+    --border-color: #fff;
+}
+
+.buttonViewChoice {
+    --background: white;
+    --border-radius: 8pt;
+}
+
+.icon {
+    margin-left: auto;
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.toolbar {
+    --padding-end: 16px !important;
+    --padding-start: 16px !important;
+    --padding-top: 0;
+    --padding-bottom: 0;
+}

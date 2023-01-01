@@ -1,0 +1,165 @@
+.content {
+  $size: 320px;
+  $giftSize: 40px;
+  --height: 100vh;
+  position: relative;
+  --background: url('../../asset/system/lucky-wheel-background.png') no-repeat 100% center/cover;
+
+  .wheelContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .wheel {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+
+    .wheelShine {
+      position: absolute;
+      z-index: 9;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .wheelMarker {
+      position: absolute;
+      z-index: 4;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @keyframes markerSpinning {
+        from {transform: translate(-50%, -50%) rotate(0deg)}
+        to {transform: translate(-50%, -50%) rotate(20deg)}
+      }
+
+      &--spinning {
+        animation-name: markerSpinning;
+        animation-duration: 200ms ;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out
+      }
+    }
+
+    .wheelContent {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: $size;
+      height: $size;
+      border-radius: 1000px;
+      overflow: visible;
+
+      .hold {
+        position: absolute;
+        width: $size;
+        height: $size;
+        border-radius: 100%;
+
+        &--clipped { // split into right half
+          clip: rect(0px, $size, $size, calc($size / 2));
+        }
+
+        .pie {
+          transition: transform 1s;
+          position: absolute;
+          width: $size;
+          height: $size;
+          border-radius: 100%;   
+          
+          &--clipped { // split into left half
+            clip: rect(0px, calc($size / 2), $size, 0px);    
+          }
+        }
+
+        .halfPie {
+          position: absolute;
+          width: $size;
+          height: $size;
+          border-radius: 100%;
+          overflow: visible;
+
+          img {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            width: $giftSize;
+            height: $giftSize;
+            border-radius: 12px;
+            border: 2px solid white;
+            border-bottom-width: 4px;
+          }
+        }  
+      }
+    }
+  }
+
+  .topButtons {
+    // display: flex;
+    padding: 50px 32px 0 32px;
+    width: 100%;
+  }
+
+  .comboBoxHolder {
+    width: 100%;
+    padding: 16px 16px 0 16px;
+  }
+
+  .bottomButtons {
+    position: absolute;
+    bottom: 0;
+    padding: 0 16px 36px 16px;
+    width: 100%;
+  }
+
+}
+
+.actionSheet {
+  --height: auto;
+  --min-height: 100px;
+  --background: linear-gradient(180deg, #FFFAEC, #FCF1D0);
+  
+  .actionSheet__content {
+    padding: 44px 0 0 0;
+    font-size: 16px;
+    color: black;
+
+    &__header {
+      font-weight: 500;
+      padding: 12px 28px;
+      border-bottom: 1px solid #ffe8c5;
+    }
+
+    &__list {
+      font-weight: 400;
+      padding: 0 28px;
+
+      &__item {
+        display: flex;
+        padding: 16px 0;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ffe8c5;
+
+        ion-icon {
+          font-size: 24px;
+          color: var(--secondary)
+        }
+      }
+    }
+  }
+}

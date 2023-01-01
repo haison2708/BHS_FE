@@ -1,0 +1,45 @@
+#IonItem {
+    --inner-padding-end: 0px;
+    border-radius: 12px;
+    border: 1px solid #A4A4A8;
+}
+
+#IonItem:focus-within {
+    border-color: #3D3C4E;
+}
+
+.icon {
+    --width: 48px;
+    --max-width: 48px;
+    --height: 48px;
+    --max-height: 48px;
+    padding: 12px;
+}
+
+.container {
+    --border-radius: 12px;
+    --border: 1px solid #A4A4A8;
+}
+
+.container:focus-within {
+    --border: 1px solid #3D3C4E;
+}
+.container .customInput{
+    color: #A4A4A8;
+}
+.container:focus-within .customInput{
+    color: #3D3C4E;
+}
+.customInput {
+    height: 100%;
+    padding-right: 8px;
+    --padding-end: 8px;
+}
+.customInput input {
+    height: 100%;
+}
+#IonItemErors {
+    --inner-padding-end: 0px;
+    border-radius: 12px;
+    border: 1px solid red;
+}

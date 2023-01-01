@@ -1,0 +1,75 @@
+.cardContent {
+  height: 80px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  // color: black;
+
+  ion-icon {
+    font-size: 14px;
+  }
+
+  .left {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    img {
+      border-radius: 5px;
+      height: 100%;
+    }
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .right {
+    width: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #a4a4a8;
+  font-style: 14px;
+  font-weight: 300;
+  margin-right: 8px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0d0c22;
+}

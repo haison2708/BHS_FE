@@ -1,0 +1,31 @@
+.loading {
+    $size: 24px;
+
+    position: absolute;
+    z-index: 99999;
+    top: -($size + 12);
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border-radius: 100%;
+    padding: 4px;
+    transform: translate(-50%, 0);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: all ease-in 0.5s;
+    z-index: 999999;
+  
+    ion-spinner {
+      width: $size;
+      height: $size;
+    }
+  }
+
+  .active {
+    top: 140px
+  }

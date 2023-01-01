@@ -1,0 +1,79 @@
+.actionSheet {
+    --height: auto;
+    --min-height: 100px;
+    --background: white;
+    
+    .actionSheet__content {
+      padding: 44px 0 34px 0;
+      font-size: 16px;
+      color: black;
+  
+      &__header {
+        font-weight: 700;
+        font-size: 18px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+            width: 91px;
+            height: 85px;
+        }
+
+        .textBlock {
+            padding: 12px 12px 0 12px;
+        }
+
+        .chip {
+            background-color: var(--link);
+            font-size: 12px;
+            font-weight: 300;
+            color: white;
+            margin: 12px 12px 16px 12px;
+            padding: 4px 8px;
+            border-radius: 60px;
+        }
+      }
+  
+      &__list {
+        font-weight: 400;
+        padding: 0 16px;    
+  
+        &__item {
+          display: flex;
+          padding: 8px 0;
+          align-items: center;
+          border-top: 1px solid var(--gray-w);
+          margin-bottom: 10px;
+          min-height: 35px;
+
+          .left {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            padding-right: 10px;
+
+            .image {
+                width: 32px;
+                height: 32px;
+                border: 1px solid var(--gray-w);
+                border-radius: 100%;
+                margin: 0 13px;
+            }
+          }
+
+          .right {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: var(--link);
+            
+            ion-icon {
+              font-size: 16px;
+            }
+          }
+  
+        }
+      }
+    }
+  }

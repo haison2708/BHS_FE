@@ -1,0 +1,65 @@
+.modal {
+    --width: 90%;
+    --height: auto;
+    border-radius: 20px;
+    --background: transparent;
+    --overflow: visible;
+
+    .content {
+        position: relative;
+        height: 100%;
+        overflow: visible;
+        border-radius: 20px;
+        background-image: linear-gradient(180deg, #FFFAEC, #FCF1D0);
+        border: 8px solid #E26C20;
+        border-top-width: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 16px;
+        font-size: 16px;
+        padding: 0 24px 16px 24px;
+
+        .handle {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: visible;
+            width: 161px;
+            height: 56px;
+        }
+
+        .logo {
+            margin-top: 30px;
+        }
+
+        .closeButton {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(30%, -40%);
+        }
+
+        .title {
+            padding: 16px 0;
+            font-weight: bold;
+        }
+
+        .description {
+            font-weight: 400;
+        }
+
+        .turnsBlock {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            margin-top: 20px;
+        }
+
+        .sorryBlock {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+    }
+}

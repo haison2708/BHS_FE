@@ -1,0 +1,66 @@
+#IonItem {
+  --inner-padding-end: 0px;
+  --padding-start: 0px;
+  --height: 48px;
+  --max-height: 48px;
+  border-radius: 12px;
+  border: 1px solid #a4a4a8;
+}
+#IonItem:focus-within {
+  border-color: #3d3c4e;
+}
+
+.customInput {
+  font-size: 16px;
+}
+
+#IonItem .customInput {
+  color: black;
+}
+#IonItem:focus-within .customInput {
+  color: #3d3c4e;
+}
+.icon {
+  --width: 48px;
+  --max-width: 48px;
+  --height: 48px;
+  --max-height: 48px;
+  padding: 12px;
+  color: #a4a4a8;
+}
+
+.faIcon {
+  color: #a4a4a8;
+  padding: 0 12px;
+}
+
+.container {
+  --border-radius: 12px;
+  --border: 1px solid #a4a4a8;
+}
+.container:focus-within {
+  --border: 1px solid #3d3c4e;
+}
+#IonItem:focus-within .icon {
+  color: #3d3c4e;
+}
+#IonItemErors {
+  --height: 48px;
+  --max-height: 48px;
+  --inner-padding-end: 0px;
+  border-radius: 12px;
+  border: 1px solid red;
+}
+#IonItemErors .customInput {
+  color: #a4a4a8;
+}
+#IonItemErors:focus-within .customInput {
+  color: #3d3c4e;
+}
+.required::before {
+  content: '*';
+  color: #e41a23;
+  line-height: 19px;
+  font-size: 16px;
+  margin-right: 5px;
+}

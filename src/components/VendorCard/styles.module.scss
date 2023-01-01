@@ -1,0 +1,68 @@
+.logoBrand{
+    display: flex;
+    flex: 1 1 20%;
+}
+.listAvatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50px;
+    object-fit: cover;
+    background-position: 20% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.IonItem {
+    --inner-padding-bottom: 0;
+    --inner-padding-end: 0;
+    --inner-padding-start: 0;
+    --inner-padding-top: 0;
+    --ion-background-color: transparent;
+    --border-style: none;
+    --border-widthe: none;
+    --ion-tab-bar-background-focused: transparent;
+    --background-hover: transparent;
+    --ripple-color: transparent;
+}
+
+.buttonView {
+    --border-radius: 8pt;
+    --background: transparent;
+    height: 25px;
+    --border-width: 1px;
+    --border-style: solid;
+    --border-color: #fff;
+    --padding-start: 8px;
+    --padding-end: 8px;
+    --padding-top: 4px;
+    --padding-bottom: 4px;
+    z-index: 99999;
+}
+
+ion-checkbox {
+    --size: 20px
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px gray solid;  
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ion-icon {
+        font-size: 16px;
+        font-weight: 900;
+        color: white;
+    }
+
+    &--active {
+        background-color: var(--primary);
+        border: none;
+    }
+}

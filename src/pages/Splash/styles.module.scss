@@ -1,0 +1,21 @@
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../asset/system/background_login.png');
+    position: relative;
+
+    ion-img {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    > div {
+        position: absolute;
+        bottom: 53px;
+        font-size: 16px;
+        font-weight: 450;
+    }
+}

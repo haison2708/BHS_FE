@@ -1,0 +1,120 @@
+.toolbar {
+    transition: all 0.4s;
+}
+
+.ionToolbar {
+    --ion-toolbar-background-color: transparent;
+    --background: transparent;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.content {
+    --background: var(--white-gray);
+}
+
+.followButton {
+    height: 25px;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.cardHolder {
+    z-index: 9999;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* max-width: 396px; */
+}
+
+.header__card {
+    overflow: unset;
+    padding: 16px 16px 0px 16px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 0.4s ;
+
+    &--shrink {
+        height: 70px;
+    }
+}
+
+.header__cardAvatar {
+    background-color: "#FFFFFF";
+    box-shadow: "#0000000A 0px 4px 8px";
+    width: 106px;
+    height: 106px;
+    transition: all 0.2s;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 0);
+
+    &--hiden {
+        position: absolute;
+        transform: translate(-50%, 0) scale(0.7);
+        background-color: "#FFFFFF";
+        box-shadow: "#0000000A 0px 4px 8px";left: 50%;
+        top: -50%;
+        opacity: 0;
+    }
+}
+
+.header__button {
+    width: 40px !important;
+    height: 40px !important;
+    --border-radius: 40px !important;
+}
+
+.header__button > ion-icon{
+    font-size: 20px;
+}
+
+.backButton {
+    --background: white;
+    --color: black;
+    --icon-font-size: 20px;
+    --padding-start: 0
+}
+
+.vendorTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.statusButton {
+    height: 33px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.infoCard {
+    color: black;
+}
+
+.infoCard ion-card-header {
+    padding: 16px;
+}
+
+.infoCard__attribute {
+    display: flex;
+    margin-top: 10px;
+}
+
+.infoCard__attribute ion-icon {
+    margin-right: 20px;
+    font-size: 16px ;
+}
+
+.divider {
+    height: 200%;
+    border-top: 2px var(--white-gray) solid;
+}

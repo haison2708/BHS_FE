@@ -1,0 +1,114 @@
+.container {
+
+}
+
+.card__top {
+    height: 48px;
+    border-bottom: 1px var(--white-gray) solid;
+    padding: 12px 16px;
+    display: flex;
+    transition: padding-bottom 0.4s;
+}
+
+.card__topLeft {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 200;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card__topCenter {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 13px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    justify-content: space-between;
+
+    .point__show {
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    .point__hidden {
+        opacity: 0;
+    }
+}
+
+.card__topRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__topRight > ion-icon {
+    font-size: 22px;
+    color: var(--primary);
+}
+
+.card__bottom {
+    padding: 12px 8px;
+    display: flex;
+    height: 100%;
+}
+
+.card__bottomButton {
+    display: flex;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.card__bottomButtonLeft {
+    width: 64px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__bottomButtonLeftIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.card__bottomButtonRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card__bottomButtonRight > ion-label{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card__bottomButtonRight > p{
+    color: var(--gray);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.divider {
+    height: initial;
+    width: 2px;
+    background-color: var(--white-gray);
+}
+
+.shrink {
+
+    .card__top {
+        border-bottom: none;
+    }
+}

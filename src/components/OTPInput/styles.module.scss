@@ -1,0 +1,122 @@
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  margin: -1px;
+  position: relative;
+
+  ion-input {
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    input {
+      height: 100%;
+    }
+  }
+}
+
+.wrapper_focused {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  margin: -1px;
+  position: relative;
+
+  ion-input {
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    input {
+      height: 100%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 40%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--primary);
+      animation: opacityAnimation 1s linear 0s infinite;
+    }
+
+    &:not([value='']) {
+      &::after {
+        left: 65%;
+      }
+    }
+  }
+}
+
+.input {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.input_had_value {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input_error {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}

@@ -1,0 +1,26 @@
+.header {
+    height: 162px;
+    --padding-top: 51px;
+    --padding-end: 20px;
+    --padding-start: 20px;
+    color: white;
+    --background: #364a8e url("../../asset/system/background_header.png") no-repeat 100% center/cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.divider {
+    border-top: 1px solid;
+    border-color: var(--gray-w);
+    margin: 0 10px;
+    width: '100%';
+}
+
+.card {
+    position: relative;
+    width: 100vw;
+    z-index: 100;
+    top: -40px;
+    overflow: visible;
+    /* like design */
+}

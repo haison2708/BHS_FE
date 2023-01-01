@@ -1,0 +1,33 @@
+.toolbar {
+  --padding-start: 16px !important;
+  --padding-end: 16px !important;
+}
+
+.backIcon {
+  min-width: 36px;
+  margin-right: 12px;
+}
+
+.buttonView {
+  --border-radius: 8pt;
+  --background: transparent;
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: #fff;
+}
+
+.buttonViewChoice {
+  --background: white;
+  --border-radius: 8pt;
+}
+
+.IonSearchbar {
+  height: 43px;
+  --background: white;
+}
+
+.confirmButton {
+  width: 100%;
+  font-weight: 300;
+  --border-radius: 15px;
+}

@@ -1,0 +1,42 @@
+.container {
+    $size : 64px;
+    $image-size : 38px;
+    text-align: center;
+    width: $size;
+    
+    .topCard {
+        border-radius: 16px;
+        width: $size;
+        height: $size;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            object-fit: cover;
+            width: $image-size;
+            height: $image-size;
+        }
+
+        .iconWrapper{
+            width: $size;
+            height: $size;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ion-icon {
+            font-size: 24px;
+        }
+    
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,11 @@
+.searchBar{
+  --background: white;
+  --placeholder-color: var(--gray);
+  --icon-color: var(--gray);
+  height: 35px;
+
+  input {
+    font-size: 16px !important;
+    padding-left: 36px !important;
+  }
+}

@@ -1,0 +1,73 @@
+.modal {
+    $background: linear-gradient(180deg, #FFFAEC, #FCF1D0);
+    --width: 90%;
+    --height: auto;
+    border-radius: 20px;
+    --background: transparent;
+    --overflow: visible;
+
+    .content {
+        position: relative;
+        height: 100%;
+        overflow: visible;
+        border-radius: 20px;
+        background-image: $background;
+        border: 8px solid #E26C20;
+        border-top-width: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 68px 51px 16px 51px;
+        text-align: center;
+
+        .closeButton {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(30%, -40%);
+        }
+
+        .mainLogo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 8px solid #E26C20;
+            border-top-width: 4px;
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%);
+            background-image: $background;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 12px;
+                border: 2px solid white;
+                border-bottom-width: 4px;
+            }
+        }
+        
+        p {
+            font-size: 16px;
+        }
+
+        .giftName {
+            font-size: 20px;
+            color: #E26C20;
+            margin-top: 16px;
+        }   
+    }
+    
+    .sparklingLight {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}

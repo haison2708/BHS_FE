@@ -1,0 +1,25 @@
+.switch {
+    width: 30px;
+    height: 18px;
+    border-radius: 1000px;
+    border: 1px solid var(--gray-b);
+    z-index: 10000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1px;
+
+    &--active {
+        justify-content: flex-end;
+        background-color: var(--primary);
+        transition: 0.8s;
+    }
+
+    &__handle {
+        width: 14px;
+        height: 14px;
+        background-color: white;
+        border-radius: 100px;
+        border: 1px solid var(--gray-b);
+    }
+}

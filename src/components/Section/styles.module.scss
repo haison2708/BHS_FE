@@ -1,0 +1,18 @@
+.section {
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+
+    h2 {
+        font-size: 18px;
+        color: '#0D0C22';
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 14px;
+        color: var(--primary);
+    }
+}

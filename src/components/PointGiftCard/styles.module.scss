@@ -1,0 +1,120 @@
+.card {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  top: -20px;
+  overflow: visible;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vendorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-bottom: 2px solid #f7f7f8;
+
+  > h6 {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.imgVendor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  //background: rgb(255, 0, 0);
+  //border: 2px solid rgba(255, 0, 0, 0.5);
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  & > span {
+    font-size: 6px;
+    color: white;
+  }
+}
+
+.iconContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.pointContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #a4a4a8;
+  padding: 16px;
+  gap: 10px;
+  border-bottom: 2px solid #f7f7f8;
+}
+
+.pointWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.giftContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a4a4a8;
+  padding: 16px;
+
+  > span {
+    color: #0d0c22;
+    font-size: 16px;
+  }
+}
+
+.giftActive {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 9px;
+}
+
+.rankContainer {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px 16px 16px 0;
+}
+
+.imgRank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.contentRank {
+  display: flex;
+  flex-direction: column;
+  font-style: 16px;
+  font-weight: 400;
+  color: #a4a4a8;
+}
+
+.rankValue {
+  color: #2d2dfe;
+  padding: 8px 0px 16px;
+}

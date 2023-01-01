@@ -1,0 +1,96 @@
+.divider {
+    border-top: 1px solid;
+    border-color: var(--gray-w);
+    margin: 0 10px;
+    width: '100%';
+}
+
+.content {
+    position: relative;
+    width: 100vw;
+    z-index: 100;
+    top: -40px;
+    overflow: visible;
+}
+
+.mainCard {
+    height: 254px;
+    padding: 24px 20px 20px 20px;
+}
+
+.icon__container {
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon--large {
+    width: 60px;
+    height: 60px;
+}
+
+.icon--medium {
+    width: 40px;
+    height: 40px;
+}
+
+.mainCard__progressBar {
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px #f7f7f8 solid;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+.mainCard__progressBarLeft {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    border-radius: 30px;
+    /* icon-witdth 40px */
+    border-left: 40px transparent solid;
+    box-sizing: content-box;
+}
+
+.mainCard__progressBarLeftContent {
+    position: relative;
+    border-radius: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    overflow: visible;
+}
+
+.subCard {
+    --card-height: 108px;
+    height: var(--card-height);
+    display: flex;
+}
+
+.subCard--active {
+    background-color: #E7E7E9;
+}
+
+.icon__Wrapper {
+    width: var(--card-height);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subCard__content {
+    height: 100%;
+    padding: 10px 5px 10px 0;
+}
